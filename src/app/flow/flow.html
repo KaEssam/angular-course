@@ -1,0 +1,21 @@
+@if (user()) {
+  <p>hi, {{ user()?.name }}</p>
+} @else if (loading()) {
+  <p>loading...</p>
+} @else {
+  <p>log in again</p>
+}
+
+<button (click)="login()">Login</button>
+<button (click)="logout()">Logout</button>
+
+<ul>
+  @for (todo of todos(); track todo.id) {
+    <li>{{ todo.text }}</li>
+  } @empty {
+    <li>no todos</li>
+  }
+</ul>
+
+<button (click)="addTodo()">Add</button>
+<button (click)="clearTodos()">Clear</button>
