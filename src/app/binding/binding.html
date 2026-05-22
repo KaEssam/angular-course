@@ -1,0 +1,19 @@
+<p>{{ name() }}</p>
+<p>2 + 2 = {{ 2 + 2 }}</p>
+<p>upper {{ name().toUpperCase() }}</p>
+<!-- <img [src]="imageUrl()" /> -->
+
+<button [disabled]="isLoading()">SAVE</button>
+<div [class.active]="isActive()" [class.inactive]="isinActive()">toggle</div>
+<!-- <img
+  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROSVsyTE3Rq2DeKnZ9DvrUCTjEv6k0NTDNvw&s"
+  alt=""
+/> -->
+
+<button (click)="onSave()">save</button>
+<input type="text" (input)="onTyping($event)" />
+<p>{{ t() }}</p>
+
+<!-- <input [(ngModel)]="word" /> -->
+<input [ngModel]="word()" (ngModelChange)="word.set($event)" />
+<p>data: {{ word() }}</p>
