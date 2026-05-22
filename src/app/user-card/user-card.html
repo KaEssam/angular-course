@@ -1,0 +1,8 @@
+<div (click)="onSelect()">
+  <h3>{{ name() }}</h3>
+  <p>{{ email() }}</p>
+  <button (click)="onDelete(); $event.stopPropagation()">DELETE</button>
+</div>
+
+
+<button (click)="incremant.emit()">+1</button>
