@@ -1,0 +1,20 @@
+<p
+  [ngClass]="{
+    active: isActive(),
+    disabled: isDisabel(),
+    error: hasError(),
+    online: statues() === 'online',
+    offline: statues() === 'offline',
+    away: statues() === 'away',
+    permium: isPremium(),
+  }"
+  [class.active]="isActive()"
+  [class.disabled]="isDisabel()"
+  [class.error]="hasError()"
+  [ngStyle]="{
+    'background-color': bg(),
+  }"
+  [style.background-color]="bg()"
+>
+  status
+</p>
