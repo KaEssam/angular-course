@@ -11,6 +11,7 @@ import {
 } from '@angular/common';
 import { Component } from '@angular/core';
 import { interval } from 'rxjs';
+import { CustomPipePipe } from '../custom-pipe-pipe';
 
 @Component({
   selector: 'app-pipe',
@@ -24,6 +25,7 @@ import { interval } from 'rxjs';
     SlicePipe,
     JsonPipe,
     AsyncPipe,
+    CustomPipePipe,
   ],
   templateUrl: './pipe.html',
   styleUrl: './pipe.css',
