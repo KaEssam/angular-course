@@ -1,10 +1,15 @@
-.active {
-}
+/* .active {
+  background-color: blueviolet;
+} */
 
 .disabled {
   opacity: 0.5;
 }
 
 .error {
+  border: 5px solid red;
+}
+
+.appHighlight {
   border: 5px solid red;
 }

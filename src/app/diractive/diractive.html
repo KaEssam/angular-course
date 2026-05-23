@@ -15,6 +15,11 @@
     'background-color': bg(),
   }"
   [style.background-color]="bg()"
+  class="appHighlight"
 >
   status
 </p>
+
+<p appHighlight>Custom</p>
+<p appHighlight [bg]="'green'">default color</p>
+<p appHighlight [color]="'BLACK'" [bg]="'green'">diff color</p>

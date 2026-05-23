@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component, signal } from '@angular/core';
+import { Highlight } from "../highlight";
 
 @Component({
   selector: 'app-diractive',
-  imports: [CommonModule],
+  imports: [CommonModule, Highlight],
   templateUrl: './diractive.html',
   styleUrl: './diractive.css',
 })
