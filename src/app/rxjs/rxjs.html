@@ -1,0 +1,5 @@
+<button (click)="start()" [disabled]="running()">start</button>
+<button (click)="stop()" [disabled]="!running()">stop</button>
+
+<h4>current num {{ num() }}</h4>
+<p>{{ running() ? 'running' : 'stopped' }}</p>
